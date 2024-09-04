@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let guess = 0;
+        let user;
+        let computer = Math.round(Math.random() * 100)
+
+        while(true){
+            user = Number(prompt("Enter a Number"))
+
+            if(user < computer){
+                alert("Please enter higher number!")
+            }
+            else if(user > computer){
+                alert("Please enter lower number!")
+            }
+            else{
+                alert(`You've guessed correct value in ${guess} Guess!`)
+                break
+            }
+            guess++;
+        }
+
+    </script>
+</body>
+</html>
